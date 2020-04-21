@@ -83,21 +83,3 @@ while True:
     else:
         print(clf.predict(soil1[0:]))
         print("Good to go")
-
-    erod =["Decrement pH value by adding more nitrogenous content", "Need to establish greater cover of vegetation", "Increase amount of biomass added to the soil", "Decrease amount of calcium by cutting down on calcium carbonate fertilizer", "Increase percentage of phosphorus by increasing phosphorus fertilizer dosage"]
-    erod1 = ["Ideal soil for growing wheat", "Ideal conditions for grwoing perennial crops", "Advisable to grow grains and cereals on this soil"]
-
-    if(clf.predict(soil1[0:]) == '0'):
-        
-
-        message=client.messages.create(to = "+923361127068",
-                                  from_= "+12017191570",
-                                  body = random.choice(erod))
-    else:
-        
-        message=client.messages.create(to = "+923361127068",
-                                  from_= "+12017191570",
-                                  body = random.choice(erod1))
-
-    print(message.sid)
-
