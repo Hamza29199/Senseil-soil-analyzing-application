@@ -1,5 +1,5 @@
 This is a machine learning program written in Python that can analyze soil data and determine if it's vulnerable to
-erosion or not with ~91% accuracy.
+erosion or not with over 98.5% accuracy.
 
 Once it has identified the soil, it sends a text message to your phone number via the Twilio API, informing you about the nature of the soil
 and giving you advice accordingly.
